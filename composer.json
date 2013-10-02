@@ -3,7 +3,7 @@
     "description": "Bootstrap 3 files for RailsPHP Framework",
     "autoload": {
         "psr-0": {
-            "Rails\\Bootstrap3\\": "lib/Rails/Bootstrap3/"
+            "Rails\\Bootstrap3\\": "lib/"
         }
     },
     "require": {

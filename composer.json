@@ -1,0 +1,12 @@
+{
+    "name": "railsphp/bootstrap3",
+    "description": "Bootstrap 3 files for RailsPHP Framework",
+    "autoload": {
+        "psr-0": {
+            "Rails\\Bootstrap3\\": "lib/Rails/Bootstrap3/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

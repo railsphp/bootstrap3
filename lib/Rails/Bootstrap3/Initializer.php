@@ -13,5 +13,6 @@ class Initializer
             '.ttf',
             '.woff',
         ]);
+        \Rails\ActionView\ViewHelpers::addHelper('Rails\Bootstrap3\ViewHelper');
     }
 }

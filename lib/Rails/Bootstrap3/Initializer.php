@@ -7,7 +7,7 @@ class Initializer
     {
         \Rails::assets()->addPaths([
             realpath(__DIR__ . '/../../../vendor/assets/javascripts'),
-            realpath(__DIR__ . '/../../../vendor/assets/stylsheets'),
+            realpath(__DIR__ . '/../../../vendor/assets/stylesheets'),
             realpath(__DIR__ . '/../../../vendor/assets/fonts')
         ]);
         \Rails::assets()->addFilePatterns([

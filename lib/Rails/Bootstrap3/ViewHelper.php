@@ -44,16 +44,23 @@ class ViewHelper extends \Rails\ActionView\Helper
     {
         if ($attrs) {
             $this->ensureArray($attrs);
-            $attrs['class'][] = $this->btnColorToClass($color);
         } elseif (is_array($color)) {
             $attrs = $color;
+            $color = null;
             $this->ensureArray($attrs);
             $attrs['class'][] = 'btn-default';
         }
+        
         $attrs['class'][] = 'btn';
+        
+        if ($color) {
+            $attrs['class'][] = $this->btnColorToClass($color);
+        }
+        
         if (empty($attrs['type'])) {
             $attrs['type'] = 'button';
         }
+        
         return $this->contentTag('button', $text, $attrs);
     }
     
